@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: demo-provider
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: CONFIGSERVER # Spring Cloud 引擎默认配置  CONFIGSERVER
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/ # 配置为正确的 eureka 服务发现地址
+    fetch-registry: true
+    register-with-eureka: true

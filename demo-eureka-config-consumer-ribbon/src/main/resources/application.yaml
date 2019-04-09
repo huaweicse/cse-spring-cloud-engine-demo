@@ -1,0 +1,12 @@
+server:
+  port: 8779
+spring:
+  application:
+    name: demo-consumer-ribbon
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8761/eureka/ # 设置成对应SpringCloud引擎的接入地址
+    fetch-registry: true
+    register-with-eureka: true
