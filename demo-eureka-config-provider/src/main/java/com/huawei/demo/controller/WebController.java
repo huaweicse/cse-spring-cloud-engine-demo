@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @Configuration
 public class WebController {
-  @Value("${hello.rkd:PROVIDER-DEFAULT-VALUE}")
+  @Value("${hello.huawei:PROVIDER-DEFAULT-VALUE}")
   private String name;
 
   @RequestMapping("/hello")
